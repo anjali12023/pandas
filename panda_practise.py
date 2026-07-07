@@ -6,8 +6,8 @@ data = [100, 102, 104]
 
 series = pd.Series(data, index=["a", "b", "c"])
 
-series.loc["c"] = 200
-print(series)
+
+print(series.iloc[0]) #returns 100
 
 
 #loc -- location by label 
