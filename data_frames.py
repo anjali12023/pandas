@@ -24,4 +24,11 @@ new_row = pd.DataFrame([{"Name": "Sandy", "Age": 28, "Job": "Scientist"}],
 #concatenate to existing df
 df = pd.concat([df, new_row])
 
+
+new_rows = pd.DataFrame([{"Name": "Bob", "Age": 51, "Job": "Minion"},
+                        {"Name": "Crab", "Age": 2, "Job": "Chef"}], 
+                       index = ["Employee 4", "Employee 5"])
+
+df = pd.concat([df, new_rows])
+
 print(df)
