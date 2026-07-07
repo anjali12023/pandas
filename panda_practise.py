@@ -4,5 +4,5 @@ import pandas as pd
 
 data = [100, 102, 104]
 
-series = pd.Series(data, index=["a", "b", 'c'])
+series = pd.Series(data, index=["apartment 1", "apartment 2", 'apartment 3'])
 print(series)
