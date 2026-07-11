@@ -13,4 +13,4 @@ import pandas as pd
 #selection by Name
 df = pd.read_csv("data.csv", index_col = "Name")
 
-print(df.loc["Pikachu", ["Height", "Weight"]])
+print(df.loc["Charizard":"Blastoise", ["Height", "Weight"]])
