@@ -19,10 +19,14 @@ df = pd.read_csv("data.csv")
                             
 #4. Standarise text
 #make all characters lowercase
-df["Name"] = df["Name"].str.lower()
+# df["Name"] = df["Name"].str.lower()
 
 #5. Fix/ change data types
 #Change Legendary to be Booleans 
-df["Legendary"] = df["Legendary"].astype(bool)
+# df["Legendary"] = df["Legendary"].astype(bool)
+
+#6. remove duplicate values
+
+df = df.drop_duplicates()
 
 print(df.to_string())
