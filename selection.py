@@ -13,4 +13,6 @@ import pandas as pd
 #selection by Name
 df = pd.read_csv("data.csv", index_col = "Name")
 
-print(df.loc["Charizard":"Blastoise", ["Height", "Weight"]])
+# print(df.loc["Charizard":"Blastoise", ["Height", "Weight"]])
+
+print(df.iloc[0:11])
