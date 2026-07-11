@@ -5,4 +5,7 @@ df = pd.read_csv("data.csv")
 # print(df["Name"].to_string())
 
 #selection by columns:
-print(df[["Name", "Height", "Weight"]].to_string())
+# print(df[["Name", "Height", "Weight"]].to_string())
+
+#Selection by row:
+print(df.loc[0])
