@@ -23,4 +23,8 @@ df = pd.read_csv("data.csv")
 
 group = df.groupby("Type1")
 
-print(group["Height"].mean())
+#group by Type 1, find mean of heights
+# print(group["Height"].mean())
+
+print(group["Height"].sum()) #ie all Bug types have combined height of 10.8
+#other aggregate functions can be used as well 
