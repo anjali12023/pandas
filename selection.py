@@ -15,4 +15,11 @@ df = pd.read_csv("data.csv", index_col = "Name")
 
 # print(df.loc["Charizard":"Blastoise", ["Height", "Weight"]])
 
-print(df.iloc[0:11])
+# print(df.iloc[0:11:2, 0:3]) #every second row + first three columns
+
+pokemon = input("Enter a pokemon name: ")
+
+try: 
+    print(df.loc[pokemon])
+except KeyError:
+    print(f"{pokemon} not found ")
