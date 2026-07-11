@@ -13,8 +13,14 @@ df = pd.read_csv("data.csv")
 # print(df.count()) #counting number of values within each column 
 
 #SINGLE DATAFRAME
-print(df["Height"].mean())
-print(df["Height"].sum())
-print(df["Height"].min())
-print(df["Height"].max())
-print(df["Height"].count()) #counting number of values within each column 
+# print(df["Height"].mean())
+# print(df["Height"].sum())
+# print(df["Height"].min())
+# print(df["Height"].max())
+# print(df["Height"].count()) #counting number of values within each column 
+
+#GROUP BY()
+
+group = df.groupby("Type1")
+
+print(group["Height"].mean())
